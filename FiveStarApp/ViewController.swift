@@ -21,5 +21,10 @@ class ViewController: UIViewController {
 	}
 
 
+	@IBAction func updateRating(_ sender: FiveStarControl) {
+		self.title = sender.rating != 1 ?
+			"Rating: \(sender.rating) stars" :
+			"Rating: 1 star";
+	}
 }
 
